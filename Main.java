@@ -14,13 +14,23 @@ import Conversor_p.Converso_U;
 public class Main {
     public static void main(String[] args) {
 
+
+                String[] ListaOpciones = {
+
+                        "Calculadora", "IMC",
+                        "Login", "Calcular edad",
+                        "Grados", "Opción_6",
+                        "Opción_7", "Opción_8",
+                        "Opción_9", "Salir"
+                };
+
         boolean programas = true;
 
         do {
             //
             Banner.mensaje();
             //PEDIR UNA OPCIÓN
-            ListaOpciones.listaOpciones();
+            opciones.ListaOpciones.opciones(ListaOpciones);
 
             //PEDIR UNA OPCIÓN
 

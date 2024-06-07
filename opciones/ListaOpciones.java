@@ -3,36 +3,42 @@ package opciones;
 import java.awt.font.FontRenderContext;
 
 public class ListaOpciones {
-    public static void listaOpciones() {
-        String[] ListaOpciones = {
+    public static void opciones(String[] opciones) {
 
-                "Calculadora", "IMC",
-                "Login", "Calcular edad",
-                "Grados", "Opción_6",
-                "Opción_7", "Opción_8",
-                "Opción_9", "Salir"
-        };
+        int elementoMasGrande = encontrarElementoMasGrande(opciones).length();
 
-        for (int i = 0; i < ListaOpciones.length; i++) {
-            System.out.printf("[%d] %s ", i + 1, ListaOpciones[i]);
 
-            for (int j = 0;j<(13-ListaOpciones[i].length());j++){
+        for (int i = 0; i < opciones.length; i++) {
+            System.out.printf("[%d] %s ", i + 1, opciones[i]);
+
+            for (int j = 0;j<(13-opciones[i].length());j++){
                 System.out.print(" ");
             }
 
 
             if ((i + 1) % 2 == 0) {
                 System.out.println("");
-
             }
-
-
         }
-
 
     }
 
+    /** * Encuentra y devuelve el elemento más grande en el array listaDeOpciones. * * @param listaDeOpciones El array de opciones. * @return El elemento más grande encontrado. */ public static String encontrarElementoMasGrande (String[] listaDeOpciones) {
+        String elementoMasGrande = listaDeOpciones[0];
 
+        for (String opcion : listaDeOpciones) {
+            if (opcion.length() > elementoMasGrande.length()) {
+                elementoMasGrande = opcion;
+            }
+        }
+
+        return elementoMasGrande;
+    }
 }
+
+
+
+
+
 
 

@@ -1,5 +1,7 @@
 package lista;
 
+import opciones.ListaOpciones;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
@@ -7,11 +9,11 @@ public class ListaDeCompras {
 
 
 
-    public static String[] opciones = {"Lista de compras","Salida"};
+    public static String[] opciones6 = {"Lista de compras","Salida"};
 
             public static void compras(){
 
-            ListaDeCompras.cargar(opciones);
+            ListaOpciones.opciones(opciones6);
 
                 Scanner opcion = new Scanner(System.in);
                 System.out.println("[?]: ");
@@ -32,25 +34,24 @@ public class ListaDeCompras {
                 List<String> listaNombre = new ArrayList<>();
                 List<Double> ListaPrecio = new ArrayList<>();
 
-                Scanner item = new Scanner(System.in);
                 String rP;
                 double rPc;
 
-
-
-                for (int i = 1; i<=3;i++)
+                for (int i = 1; i<=3;i++){
                     Scanner item = new Scanner(System.in);
-                    System.out.println("Producto: ");
+                    System.out.print("Producto: ");
                     rP = item.nextLine();
-                    System.out.println("Precio: ");
+                    System.out.print("Precio: ");
                     rPc = item.nextDouble();
 
-                listaNombre.add(rP);
-                ListaPrecio.add(rPc);
-
-                System.out.println(listaNombre + "-->" + ListaPrecio);
+                    listaNombre.add(rP);
+                    ListaPrecio.add(rPc);
+                }
+                System.out.println(listaNombre+"--"+ListaPrecio);
 
     }
+
+
 
 
     }
