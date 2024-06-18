@@ -1,11 +1,12 @@
-import Programas.IMC;
-import interfaz_grafica.Banner;
+import IMC.IMC;
+import iinterfaz_grafica.Banner;
+import libros.Biblioteca;
 import lista.ListaDeCompras;
-import opciones.ListaOpciones;
-import Matematicas.Mate;
-import Sentigrados.ssentigrados;
+import calculadora.Mate;
+import conversor.ssentigrados;
 import java.util.Scanner;
-import Conversor_p.Converso_U;
+import conversor.Converso_U;
+import mis_metodos.MisMetodos;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -30,7 +31,7 @@ public class Main {
             //
             Banner.mensaje();
             //PEDIR UNA OPCIÓN
-            opciones.ListaOpciones.opciones(ListaOpciones);
+            mis_metodos.ListaOpciones.opciones(ListaOpciones);
 
             //PEDIR UNA OPCIÓN
 
@@ -38,6 +39,8 @@ public class Main {
             System.out.print("[?]: ");
             int opcion = intOpcion.nextInt();
             System.out.println(" ------------------------------------------------------------------------------------");
+
+            MisMetodos.imprimirLinea();
 
             //CARGAR OPCIÓN DEL USUARIO
             switch (opcion){
@@ -70,7 +73,7 @@ public class Main {
                     break;
 
                 case 8:
-                    System.out.println("Opción 8");
+                    Biblioteca.programa();
                     break;
 
                 case 9:

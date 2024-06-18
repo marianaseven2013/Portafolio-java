@@ -1,4 +1,4 @@
-package Sentigrados;
+package conversor;
 import java.util.Scanner;
 
 public class ssentigrados {

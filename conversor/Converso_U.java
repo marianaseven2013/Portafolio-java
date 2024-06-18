@@ -1,4 +1,4 @@
-package Conversor_p;
+package conversor;
 
 import java.util.Scanner;
 

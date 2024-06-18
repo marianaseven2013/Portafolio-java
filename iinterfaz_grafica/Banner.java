@@ -1,4 +1,4 @@
-package interfaz_grafica;
+package iinterfaz_grafica;
 
 public class Banner {
     public static void mensaje(){

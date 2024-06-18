@@ -1,6 +1,4 @@
-package opciones;
-
-import java.awt.font.FontRenderContext;
+package mis_metodos;
 
 public class ListaOpciones {
     public static void opciones(String[] opciones) {
@@ -23,7 +21,7 @@ public class ListaOpciones {
 
     }
 
-    /** * Encuentra y devuelve el elemento más grande en el array listaDeOpciones. * * @param listaDeOpciones El array de opciones. * @return El elemento más grande encontrado. */ public static String encontrarElementoMasGrande (String[] listaDeOpciones) {
+    /** * Encuentra y devuelve el elemento más grande en el array listaDeOpciones. * * @param listaDeOpciones El array de mis_metodos. * @return El elemento más grande encontrado. */ public static String encontrarElementoMasGrande (String[] listaDeOpciones) {
         String elementoMasGrande = listaDeOpciones[0];
 
         for (String opcion : listaDeOpciones) {
