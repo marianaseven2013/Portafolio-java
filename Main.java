@@ -1,3 +1,4 @@
+import Colegio.Escuela;
 import IMC.IMC;
 import iinterfaz_grafica.Banner;
 import libros.Biblioteca;
@@ -77,7 +78,7 @@ public class Main {
                     break;
 
                 case 9:
-                    System.out.println("Opción 9");
+                    Escuela.programar();
                     break;
 
                 case 10:

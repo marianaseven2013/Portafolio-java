@@ -11,7 +11,8 @@ public class Libro {
         this.autor = autor;
         this.fecha = fecha;
     }
-
+//public private state se aplican a variables y si yo le coloco private no se podra ver en otra clase
+    //get ontener la información o extraer la información
     public String getTitulo(){return titulo;}
 
     public String getAutor(){return autor;}
@@ -21,6 +22,8 @@ public class Libro {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+    //ser es configuración o cambio de información, establecer valores en las propiedades de una clase.
 
     public void setAutor(String autor) {
         this.autor = autor;
